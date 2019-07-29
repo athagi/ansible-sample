@@ -1,0 +1,8 @@
+- name: hello world
+  debug: 
+    msg: "hello world"
+- name: create file
+  file:
+    path: /tmp/hello.txt
+    state: touch
+    mode: '0644'
